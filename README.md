@@ -17,12 +17,10 @@ A sleek and modern wedding planner website built using **React**, **HTML**, **CS
 
 ## 📷 Screenshots
 
-![Screenshot 2025-06-14 113515](https://github.com/user-attachments/assets/2bdd50a7-5a15-4d38-95be-8cfd15a1a8ea)
-![Screenshot 2025-06-14 113439](https://github.com/user-attachments/assets/119117d3-c636-4e81-8fd6-27c482dcab95)
-![Screenshot 2025-06-14 113408](https://github.com/user-attachments/assets/dfccbb01-e89e-47de-a95d-07944b16f79b)
-![Screenshot 2025-06-14 113323](https://github.com/user-attachments/assets/83227aa5-e84b-4006-b63f-cccba817b9e8)
-
-
+![Screenshot 2025-06-14 113323](https://github.com/user-attachments/assets/61eaf181-641f-4caa-8462-7c10f8c839b1)
+![Screenshot 2025-06-14 113408](https://github.com/user-attachments/assets/f8b2878a-b49f-4363-89d6-1a7390749b2b)
+![Screenshot 2025-06-14 113439](https://github.com/user-attachments/assets/62c1fab9-3486-475e-9b41-9c6076753572)
+![Screenshot 2025-06-14 113515](https://github.com/user-attachments/assets/90afb4f3-246e-4ed7-92fe-c3f206549ad2)
 
 ## 🚀 How to Run Locally
 
