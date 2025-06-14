@@ -1,12 +1,33 @@
-# React + Vite
+# 💍 Wedding Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and modern wedding planner website built using **React**, **HTML**, **CSS**, and **Bootstrap**.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎉 Homepage with modern layout and animations
+- 📸 Venue photo cards with ratings and brief info
+- 🔎 Filter venues by price, likes, popularity
+- 🔄 Fully responsive design (mobile-friendly)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js, HTML5, CSS3, Bootstrap
+- **Design**: Responsive Grid, Flexbox
+- **Tools**: VS Code, Git, GitHub
+
+## 📷 Screenshots
+
+![Screenshot 2025-06-14 113515](https://github.com/user-attachments/assets/2bdd50a7-5a15-4d38-95be-8cfd15a1a8ea)
+![Screenshot 2025-06-14 113439](https://github.com/user-attachments/assets/119117d3-c636-4e81-8fd6-27c482dcab95)
+![Screenshot 2025-06-14 113408](https://github.com/user-attachments/assets/dfccbb01-e89e-47de-a95d-07944b16f79b)
+![Screenshot 2025-06-14 113323](https://github.com/user-attachments/assets/83227aa5-e84b-4006-b63f-cccba817b9e8)
+
+
+
+## 🚀 How to Run Locally
+
+```bash
+git clone https://github.com/Nxs696/wedding-planner.git
+cd wedding-planner
+npm install
+npm start
