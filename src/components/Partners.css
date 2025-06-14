@@ -1,0 +1,132 @@
+.partners-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Added to contain the sliding logos */
+}
+
+.partners-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.partners-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+.partners-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Hide scrollbar */
+.partners-logo-container::-webkit-scrollbar {
+  display: none;
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+  min-width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.partner-name {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.partner-logo:hover .partner-name {
+  color: #d4af37;
+}
+
+/* Animation for logos entering the view */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.partner-logo {
+  animation: fadeInSlide 0.5s ease forwards;
+}
+
+.partner-logo:nth-child(2) { animation-delay: 0.1s; }
+.partner-logo:nth-child(3) { animation-delay: 0.2s; }
+.partner-logo:nth-child(4) { animation-delay: 0.3s; }
+.partner-logo:nth-child(5) { animation-delay: 0.4s; }
+
+@media (max-width: 768px) {
+  .partners-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .partners-logo-container {
+    gap: 20px;
+  }
+  
+  .partner-logo {
+    min-width: 120px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-logo-container {
+    gap: 15px;
+  }
+  
+  .partner-logo {
+    min-width: 100px;
+    height: 50px;
+  }
+  
+  .partner-name {
+    font-size: 0.9rem;
+  }
+}
+

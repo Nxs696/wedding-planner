@@ -1,0 +1,206 @@
+.banner-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    /* Add fallback background color */
+    background-color: #1a1a1a;
+    background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Add this for better image handling */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.banner-container:hover {
+    transform: scale(1.01);
+}
+
+.banner-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.2) 100%
+    );
+    /* Add vendor prefixes for backdrop-filter */
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 60px;
+    color: white;
+    text-align: left;
+    max-width: 700px;
+    margin-top: 100px;
+    /* Add vendor prefixes for animation */
+    -webkit-animation: fadeInUp 1s ease-out;
+    animation: fadeInUp 1s ease-out;
+}
+
+.banner-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    -webkit-background-clip: text;
+    background-clip: text; /* Add standard property */
+    -webkit-text-fill-color: transparent;
+    /* Add vendor prefixes for animation */
+    -webkit-animation: fadeInLeft 1s ease-out;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.banner-content p {
+    font-size: 2rem;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    color: #f0f0f0;
+    /* Add vendor prefixes for animation */
+    -webkit-animation: fadeInRight 1s ease-out;
+    animation: fadeInRight 1s ease-out;
+}
+
+/* Add webkit keyframes */
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-container {
+        height: 450px;
+    }
+
+    .banner-content h2 {
+        font-size: 3.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        height: 400px;
+    }
+
+    .banner-content {
+        margin-top: 60px;
+        padding: 30px;
+    }
+
+    .banner-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .banner-content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        height: 300px;
+        margin: 20px 0;
+    }
+
+    .banner-content {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .banner-content h2 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+}
+
+
